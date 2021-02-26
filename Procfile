@@ -1,1 +1,1 @@
-web: gunicorn prabodhh.wsgi --log-file -
+web: gunicorn pgallery.wsgi --log-file -

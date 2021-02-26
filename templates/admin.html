@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for i in jjj %}
+&nbsp;
+<img src="{{ i.image.url }}" alt="..." class="img-thumbnail" style="width:7%;">
+
+<h1>{{ i.caption }}</h1>
+<h1>{{ i.category }}</h1>
+
+{% endfor %}
+
+<button type="button" class="btn btn-primary" href="{{}}">clear</button>
+
+{% endblock content %}

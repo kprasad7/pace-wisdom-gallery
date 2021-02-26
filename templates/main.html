@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Please upload the image for gallery</h1>
+<br>
+<div class="container">
+      
+        <form action="." method="post"  enctype="multipart/form-data">
+
+            {% csrf_token %}
+            {{form.as_p}}
+           
+            <button type="submit" class="btn btn-lg btn-success">Upload</button>
+        </form>
+       
+    </div>
+    <div>
+     <center>
+      <a href="{% url "g"%}" class="badge badge-primary">Visit Gallery</a>
+     </center> 
+    </div>
+
+{% endblock content %}
